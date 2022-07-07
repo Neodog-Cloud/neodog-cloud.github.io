@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>JavaScript Table Filter Search</title>
+    <title>Buddha sagte: „Nehmt nichts von dem, was ich euch lehre, einfach aus Glauben oder aus Respekt vor mir an, sondern überprüft es selbst, als ob ihr Gold kaufen würdet.“</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         h3 span {
@@ -24,8 +24,20 @@
 th,
 td {
   border: 1px solid black;
-  width: 100px;
-  overflow: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
     </style>
 </head>
@@ -33,8 +45,8 @@ td {
 <body class="mt32">
     <div class="container">
         <h3>
-            <span>JavaScript Filter Table Data</span>
-            <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+            <span>Buddha sagte: „Nehmt nichts von dem, was ich euch lehre, einfach aus Glauben oder aus Respekt vor mir an, sondern überprüft es selbst, als ob ihr Gold kaufen würdet.“</span>
+            <input type="search" placeholder="Suche..." class="form-control search-input" data-table="customers-list"/>
         </h3>
 <table class="table table-striped mt32 customers-list">
   <thead>
